@@ -17,6 +17,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    include-in-header: analytics.html
 
 editor: visual
 
