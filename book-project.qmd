@@ -1,0 +1,109 @@
+---
+title: "Book Project"
+---
+
+## Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus (London: Routledge, forthcoming)
+
+
+In 1989, as the Berlin Wall fell, the political consensus around the world was clear: both the Communist Party of China and the Communist World were facing a terminal crisis. Yet, in the following decades, China not only averted all forms of collapse but engineered the most dramatic economic ascent in human history while defying Washington's prominent political prescriptions: transition to liberal democracy. How?
+
+### Figure 1.1: The Effect of the Fall of the Berlin Wall on GDP per Capita, 1979–2019
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(ggplot2)
+library(dplyr)
+library(plotly)
+
+df <- read.csv("data/gdp-per-capita-maddison-berlinwall.csv", stringsAsFactors = FALSE)
+
+surviving <- c("VNM", "CUB", "PRK", "LAO")
+collapsed <- c("RUS", "BGR", "HUN", "POL", "ROU")
+
+base_yr <- df |>
+  filter((Code != "PRK" & Year == 1989) | (Code == "PRK" & Year == 1990)) |>
+  select(Code, base = GDPpc)
+
+df <- df |>
+  left_join(base_yr, by = "Code") |>
+  mutate(
+    idx = 100 * GDPpc / base,
+    group = case_when(
+      Code == "CHN"       ~ "China",
+      Code %in% surviving ~ "Regime Continued",
+      Code %in% collapsed ~ "Regime Collapsed"
+    )
+  ) |>
+  filter(!is.na(idx)) |>
+  mutate(group = factor(group, levels = c("China", "Regime Continued", "Regime Collapsed")))
+
+df_group <- df |>
+  filter(group != "China") |>
+  group_by(group, Year) |>
+  summarise(idx = mean(idx, na.rm = TRUE), .groups = "drop")
+
+df_china <- df |> filter(group == "China")
+
+pal <- c(
+  "China"            = "#D55E00",
+  "Regime Continued" = "#0072B2",
+  "Regime Collapsed" = "#E69F00"
+)
+
+p <- ggplot() +
+  geom_vline(xintercept = 1989, linetype = "dashed", colour = "grey45", linewidth = 0.45) +
+  geom_line(
+    data = df_group,
+    aes(x = Year, y = idx, colour = group, group = group,
+        text = paste0(group, "<br>", Year, ": ", round(idx, 1))),
+    linewidth = 0.9
+  ) +
+  geom_line(
+    data = df_china,
+    aes(x = Year, y = idx, colour = group, group = group,
+        text = paste0("China<br>", Year, ": ", round(idx, 1))),
+    linewidth = 1.4
+  ) +
+  scale_colour_manual(name = NULL, values = pal) +
+  scale_x_continuous(breaks = seq(1980, 2015, 5)) +
+  scale_y_continuous(breaks = seq(0, 600, 100)) +
+  labs(x = "Year", y = "GDP per Capita (1989 = 100)") +
+  theme_classic(base_size = 12) +
+  theme(legend.position = "bottom", legend.title = element_blank())
+
+ggplotly(p, tooltip = "text") |>
+  layout(legend = list(orientation = "h", y = -0.2))
+```
+
+*Notes: China (vermilion), regimes that continued after 1989 (Vietnam, Cuba, North Korea, Laos — blue), and regimes that collapsed (Russia, Bulgaria, Hungary, Poland, Romania — amber). Hover over a line for exact values; click a legend entry to toggle it. Source: Maddison Project Database, via Our World in Data.*
+
+The book, *Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus*, moves beyond conventional explanations to offer a groundbreaking new answer, arguing that China's success was not a rejection of Western economic tools but a strategic outmaneuvering of its fundamental political logic. This was achieved through a profound organizational transformation of the party-state itself into a Socialist Developmental State (SDS).
+
+This book reveals the core instrument of SDS: not the industrial policy of its capitalist counterparts, but the strategic wielding of cadre policy. Through a multi-layered framework combining historical analysis, a formal political economy model, and data-intensive empirical research, Xiao unpacks the black box of the party-state in its Reform Era. It demonstrates how political line struggles through elite dynamics translated into specific rules for selecting and promoting cadres, shaping the quality of market institutions, and driving the nation's transformative socialist big push.
+
+From Deng Xiaoping and Chen Yun's high-stakes leadership politics to the career trajectories of senior technocrats, this book presents a refreshingly new framework for understanding the mechanics of Chinese statecraft and the nature of authoritarian resilience. The same framework could help explain China's current challenges, interpreting its recent economic slowdown as a direct result of Xi Jinping's backlash against the winning formulas that powered its rise in the past decades.
+
+## Endorsements
+
+> Why did China's party-state thrive while communist regimes elsewhere collapsed? Kezhou Xiao argues that the Communist Party of China outmaneuvered the Washington Consensus by embracing its economic program while rejecting its political prescriptions — transforming itself into a Socialist Developmental State. Two cadre policy instruments proved decisive: the Central Advisory Commission, which retired the revolutionary old guard, and the Four Modernizations of Cadres, which installed market-oriented technocrats. Combining formal theory, original biographical data, and quasi-experimental evidence, this book shows that organizational self-transformation, not liberalization alone, powered China's economic takeoff — with profound implications for theories of development, transition, and authoritarian resilience.
+>
+> — **Yuhua Wang**, Ford Foundation Professor of Modern China Studies, Harvard University
+
+> China demonstrates a strong case of how a party-state system could possibly engineer a market transition. By tracing how China's cadre system reform restructured the incentives and capacities of the officials, and rebuilt the organizational foundations through which pro-growth policy was designed, contested, and implemented, Kezhou Xiao's book offers a rigorous and compelling account of how political change enabled economic change.
+>
+> — **Jun Zhang**, Professor of Economics and Dean, School of Economics, Fudan University
+
+> Few questions matter more for understanding China than how its cadres were remade. With rich empirical analysis, this book shows how marketization transformed the recruitment, composition, and logic of the party-state from within — and why that legacy shapes governance in the Xi Jinping era. Clear, original, and essential reading for students of contemporary Chinese politics.
+>
+> — **Cheng Li**, Professor of Political Science and Founding Director, Centre on Contemporary China and the World, The University of Hong Kong
+
+> For a generation, the Washington Consensus shaped how outsiders understood — and misunderstood — China's development. Kezhou Xiao's *Marketization and Party-State Transformation* offers a long-overdue corrective grounded in original data. Through meticulous analysis of commission rivalry, cadre selection, and the Four Modernizations, Xiao demonstrates that China's market transition was not a concession to neoliberal orthodoxy but a product of deliberate party-state transformation. This book reframes the central debate in China's political economy at exactly the moment when that debate matters most.
+>
+> — **Zhiyuan Cui**, Professor of Political Economy, School of Public Policy and Management, Tsinghua University
+
+> Students of state-business relations have long sought to explain how China's party-state managed market transition without the institutional blueprints prescribed by Western development economics. Kezhou Xiao's *Marketization and Party-State Transformation* provides a compelling answer. Through careful analysis of commission rivalry and cadre selection, he reveals the specific political mechanisms through which reform consensus was built and implemented from within the party-state. For scholars of political-business interaction and local governance in China, this is essential and illuminating reading.
+>
+> — **Dongya Huang**, Professor and Associate Dean, School of Government, Sun Yat-sen University
