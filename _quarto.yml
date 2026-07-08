@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!fable5_improve/"
 
 website:
   title: "Kezhou Xiao"
@@ -9,13 +12,15 @@ website:
         text: Home
       - href: book-project.qmd
         text: Book Project
+  page-footer:
+    left: "© 2026 Kezhou Xiao"
+    right: "Last updated July 2026"
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      - default
+      - ink-celadon.scss
     toc: true
     include-in-header: analytics.html
 

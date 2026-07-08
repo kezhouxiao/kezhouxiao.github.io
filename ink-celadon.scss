@@ -1,0 +1,201 @@
+/*-- scss:defaults --*/
+
+// Ink and Celadon — Quarto theme for kezhouxiao.github.io
+// Tokens: Ink #1C2733 · Paper #FCFBF8 · Celadon #4A6B5A · Mist #6B7280
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;600&family=Noto+Serif+SC:wght@500&display=swap');
+
+$ink:      #1C2733;
+$paper:    #FCFBF8;
+$celadon:  #4A6B5A;
+$mist:     #6B7280;
+
+$body-bg:            $paper;
+$body-color:         $ink;
+$link-color:         $celadon;
+$link-decoration:    none;
+
+$font-family-sans-serif: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+$headings-font-family:   "Spectral", Georgia, serif;
+$headings-font-weight:   600;
+$headings-color:         $ink;
+
+$font-size-root:     16.5px;
+$line-height-base:   1.65;
+
+$toc-color:          $mist;
+$toc-active-border:  $celadon;
+
+$navbar-bg:          $paper;
+$navbar-fg:          $ink;
+$footer-bg:          $paper;
+$footer-fg:          $mist;
+
+/*-- scss:rules --*/
+
+// ---------- page frame ----------
+// body width now controlled via format.html.grid in _quarto.yml,
+// not overridden here, so it stays consistent with the TOC/margin column
+
+// ---------- title block ----------
+h1.title {
+  font-family: "Spectral", Georgia, serif;
+  font-weight: 600;
+  font-size: 2.15rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+// bilingual name mark — used as <span class="name-zh">肖可舟</span>
+.name-zh {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: $celadon;
+  margin-left: 0.75rem;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+// ---------- section labels ----------
+// every h2 becomes a small, letter-spaced celadon label
+h2 {
+  font-family: "Spectral", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $celadon;
+  border-bottom: none;
+  margin-top: 2.6rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin-top: 1.6rem;
+}
+
+// ---------- hero ----------
+.hero {
+  display: flex;
+  gap: 2.1rem;
+  align-items: flex-start;
+  margin: 1.4rem 0 2.2rem;
+}
+.hero img {
+  width: 390px;
+  height: auto;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.hero .hero-text { padding-top: 0.15rem; }
+.hero .identity {
+  font-size: 0.98rem;
+  color: lighten($ink, 12%);
+  max-width: 30rem;
+  margin-top: 0.7rem;
+}
+.hero .links {
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  margin-top: 0.9rem;
+}
+.hero .links a { color: $celadon; }
+@media (max-width: 620px) {
+  .hero { flex-direction: column; gap: 1.2rem; }
+}
+
+// ---------- celadon hairline ----------
+hr {
+  border: none;
+  height: 1px;
+  background: rgba($celadon, 0.28);
+  margin: 2.2rem 0;
+}
+
+// ---------- links ----------
+a {
+  color: $celadon;
+  border-bottom: 1px solid rgba($celadon, 0.35);
+  text-decoration: none;
+}
+a:hover {
+  color: darken($celadon, 10%);
+  border-bottom-color: $celadon;
+}
+nav a, .navbar a, a.anchorjs-link, .toc-actions a {
+  border-bottom: none;
+}
+
+// ---------- publication entries ----------
+// paper titles: bold sans; journal line: quiet; markdown pattern below in README
+.paper-title { font-weight: 600; font-size: 0.98rem; line-height: 1.45; }
+.journal-line {
+  font-size: 0.86rem;
+  color: lighten($ink, 12%);
+  margin-top: 0.1rem;
+}
+.journal-line em { font-style: italic; }
+
+// book title styling — wrap in <span class="book-title">
+.book-title {
+  font-family: "Spectral", Georgia, serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+// ---------- collapsible presentations ----------
+details.presentations {
+  margin: 0.45rem 0 0;
+}
+details.presentations summary {
+  font-size: 0.8rem;
+  color: $mist;
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+details.presentations summary::-webkit-details-marker { display: none; }
+details.presentations summary::before {
+  content: "›";
+  color: $mist;
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+details.presentations[open] summary::before { transform: rotate(90deg); }
+details.presentations .presentation-body {
+  font-size: 0.8rem;
+  color: $mist;
+  line-height: 1.6;
+  margin: 0.35rem 0 0 1rem;
+}
+
+// ---------- TOC ("On this page") ----------
+#TOC, nav[role="doc-toc"] {
+  font-size: 0.8rem;
+}
+#TOC a, nav[role="doc-toc"] a {
+  color: $mist;
+  border-bottom: none;
+}
+#TOC a.active, nav[role="doc-toc"] a.active {
+  color: $celadon;
+  border-left-color: $celadon;
+}
+
+// ---------- footer ----------
+.nav-footer {
+  font-size: 0.78rem;
+  color: $mist;
+  border-top: 1px solid #ECEAE2;
+  padding-top: 0.9rem;
+  margin-top: 3rem;
+}
+.nav-footer a { color: $mist; border-bottom: none; }
