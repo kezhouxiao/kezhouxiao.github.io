@@ -143,10 +143,19 @@ nav a, .navbar a, a.anchorjs-link, .toc-actions a {
 
 // book title styling — wrap in <span class="book-title">
 .book-title {
+  display: block;
   font-family: "Spectral", Georgia, serif;
   font-style: italic;
   font-size: 1.08rem;
   line-height: 1.5;
+}
+// book status line (publisher/forthcoming) immediately after the title — more prominent than a plain journal-line
+.book-title + .journal-line {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $celadon;
+  margin-top: 0.35rem;
 }
 
 // ---------- collapsible presentations ----------
