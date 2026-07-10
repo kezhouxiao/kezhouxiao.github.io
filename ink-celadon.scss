@@ -149,13 +149,34 @@ nav a, .navbar a, a.anchorjs-link, .toc-actions a {
   font-size: 1.08rem;
   line-height: 1.5;
 }
-// book status line (publisher/forthcoming) immediately after the title — more prominent than a plain journal-line
-.book-title + .journal-line {
+// book publication status line — wrap in <span class="book-status">, more prominent than a plain journal-line
+.book-status {
   display: block;
   font-size: 0.95rem;
   font-weight: 600;
   color: $celadon;
   margin-top: 0.35rem;
+}
+
+// ---------- book hero (cover image + intro text) ----------
+.book-hero {
+  display: flex;
+  gap: 1.8rem;
+  align-items: flex-start;
+  margin: 1rem 0 1.6rem;
+}
+.book-hero img {
+  width: 150px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba($ink, 0.15);
+  flex-shrink: 0;
+}
+.book-hero.large img { width: 220px; }
+.book-hero .book-hero-text { padding-top: 0.1rem; }
+.book-hero .book-hero-text h2:first-child { margin-top: 0; }
+@media (max-width: 620px) {
+  .book-hero { flex-direction: column; gap: 1.1rem; }
 }
 
 // ---------- collapsible presentations ----------

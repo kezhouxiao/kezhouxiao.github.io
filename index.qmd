@@ -24,8 +24,12 @@ My research mainly examines the political economy of China's reform and developm
 
 ## Book Project
 
+::: {.book-hero}
+![](book_cover.png)
+
+::: {.book-hero-text}
 [Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus]{.book-title}
-[London: Routledge, forthcoming]{.journal-line}
+[London: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196)]{.book-status}
 
 When the Berlin Wall fell in 1989, China's Communist Party faced terminal crisis — yet it averted collapse and engineered history's most dramatic economic ascent by rejecting Washington's prescriptions for liberal democratic transition and transforming the party-state into a Socialist Developmental State.
 
@@ -34,6 +38,8 @@ Formalizing the political logic of China's marketization through a political eco
 The book will appeal to scholars and students of comparative political economy, economic development, and Chinese politics, as well as policymakers with a focus on Sino-US competition in the age of AI.
 
 [Read more →](book-project.qmd)
+:::
+:::
 
 Related papers:
 
