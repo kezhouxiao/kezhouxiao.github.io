@@ -2,10 +2,12 @@
 title: "Book Project"
 ---
 
-::: {.book-hero .large}
-![](book_cover.png)
+::: {.columns}
+::: {.column width="32%"}
+![](book_cover.png){width=100%}
+:::
 
-::: {.book-hero-text}
+::: {.column width="68%"}
 ## Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus
 
 [London: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196)]{.book-status}
