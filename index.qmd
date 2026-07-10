@@ -24,10 +24,8 @@ My research mainly examines the political economy of China's reform and developm
 
 ## Book Project
 
-::: {.book-hero}
-![](book_cover.png)
+![](book_cover.png){.book-cover}
 
-::: {.book-hero-text}
 [Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus]{.book-title}
 [London: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196)]{.book-status}
 
@@ -38,8 +36,6 @@ Formalizing the political logic of China's marketization through a political eco
 The book will appeal to scholars and students of comparative political economy, economic development, and Chinese politics, as well as policymakers with a focus on Sino-US competition in the age of AI.
 
 [Read more →](book-project.qmd)
-:::
-:::
 
 Related papers:
 
