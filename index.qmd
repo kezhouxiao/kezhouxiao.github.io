@@ -9,7 +9,7 @@ toc: true
 ::: {.hero-text}
 [Research Assistant Professor, Institute of Guangdong, Hong Kong, Macau Development Studies, Sun Yat-sen University, Guangzhou, China.]{.identity}
 
-[[University Page](https://ygafz.sysu.edu.cn/teacher/2027) · [Google Scholar](https://scholar.google.com/citations?user=KCiDSJQAAAAJ&hl=en) · [Email](mailto:spencerxiao@gmail.com)]{.links}
+[[University Page (中文主页)](https://ygafz.sysu.edu.cn/teacher/2027) · [Google Scholar](https://scholar.google.com/citations?user=KCiDSJQAAAAJ&hl=en) · [Email](mailto:spencerxiao@gmail.com)]{.links}
 :::
 :::
 
@@ -43,7 +43,7 @@ Related papers:
 [Under Review]{.journal-line}
 
 [Defying the Washington Consensus: the Socialist Big Push and the Making of China's Developmental State]{.paper-title}
-[Submitted]{.journal-line}
+[Under Review]{.journal-line}
 
 <details class="presentations">
 <summary>Presentations (8)</summary>
@@ -73,6 +73,9 @@ Sun Yat-sen University (2024/4) · YES Meeting at Northwest University, Xi'an, C
 YES Meeting at Jinan University (2024/11) · China Society of World Economics (2024/11) · Tsinghua University (2025/4)
 </div>
 </details>
+
+[Capacity, Not Desperation: Rethinking China's PPP Boom-Bust Cycle]{.paper-title}
+[Working Paper]{.journal-line}
 
 ## Publications
 
