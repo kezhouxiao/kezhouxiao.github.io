@@ -14,10 +14,6 @@ website:
         text: Home
       - href: book-project.qmd
         text: Book Project
-    right:
-      - icon: rss
-        href: index.xml
-        aria-label: "RSS Feed"
   page-footer:
     left: "© 2026 Kezhou Xiao"
     right:
@@ -33,16 +29,6 @@ format:
     pagetitle: "{{< meta title >}} – Kezhou Xiao"
     description-meta: "Research on China's political economy, state-business relations, cadre policy, and party-state transformation"
     author-meta: "Kezhou Xiao"
-    keywords:
-      - political economy
-      - China
-      - cadre policy
-      - Washington Consensus
-      - party-state transformation
-      - developmental state
-      - state-business relations
-      - Chinese politics
-      - economic development
 
 editor: visual
 
