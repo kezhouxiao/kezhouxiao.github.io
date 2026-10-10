@@ -6,15 +6,22 @@ project:
 
 website:
   title: "Kezhou Xiao"
+  description: "Research on China's political economy, state-business relations, cadre policy, and party-state transformation by Kezhou Xiao, Research Assistant Professor at Sun Yat-sen University"
+  site-url: "https://kezhouxiao.github.io"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: book-project.qmd
         text: Book Project
+    right:
+      - icon: rss
+        href: index.xml
+        aria-label: "RSS Feed"
   page-footer:
     left: "© 2026 Kezhou Xiao"
-    right: "Last updated July 2026"
+    right:
+      - text: "Built with [Quarto](https://quarto.org/)"
 
 format:
   html:
@@ -23,6 +30,19 @@ format:
       - ink-celadon.scss
     toc: true
     include-in-header: analytics.html
+    pagetitle: "{{< meta title >}} – Kezhou Xiao"
+    description-meta: "Research on China's political economy, state-business relations, cadre policy, and party-state transformation"
+    author-meta: "Kezhou Xiao"
+    keywords:
+      - political economy
+      - China
+      - cadre policy
+      - Washington Consensus
+      - party-state transformation
+      - developmental state
+      - state-business relations
+      - Chinese politics
+      - economic development
 
 editor: visual
 
