@@ -32,7 +32,7 @@ My research mainly examines the political economy of China's reform and developm
 ![](book_cover.png){.book-cover}
 
 [Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus]{.book-title}
-[London and New York: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196)]{.book-status}
+[London and New York: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196) · Featured in [China Books Review](https://chinabooksreview.com/upcoming-china-books/)]{.book-status}
 
 When the Berlin Wall fell in 1989, the Communist Party of China faced terminal crisis — yet it averted collapse and engineered history's most dramatic economic ascent by rejecting Washington's prescriptions for liberal democratic transition and transforming the party-state into a Socialist Developmental State.
 
@@ -42,15 +42,7 @@ The book will appeal to scholars and students of comparative political economy, 
 
 [Read more →](book-project.qmd)
 
-Related papers:
-
-[From Revolutionaries to Technocrats: How Four Modernizations of Cadres Drove China's Market Transition]{.paper-title}
-[Under Review]{.journal-line}
-
-[Defying the Washington Consensus: the Socialist Big Push and the Making of China's Developmental State]{.paper-title}
-[Under Review]{.journal-line}
-
-<details class="presentations">
+<details class="presentations" open>
 <summary>Presentations (8)</summary>
 <div class="presentation-body">
 Sun Yat-sen University (2022/12) · Nanjing University (2023/5) · South China Normal University (2023/6) · Fudan University (2023/10) · Xiamen University (2023/11) · International Economic Association World Congress in Colombia (2023/12) · Shanghai Jiaotong University (2026/4) · **International Economic Association World Congress in Serbia (2026/6)** — [book presentation](https://ygafz.sysu.edu.cn/article/2234)
@@ -58,6 +50,12 @@ Sun Yat-sen University (2022/12) · Nanjing University (2023/5) · South China N
 </details>
 
 ## Working Papers
+
+[From Revolutionaries to Technocrats: How Four Modernizations of Cadres Drove China's Market Transition]{.paper-title}
+[Under Review]{.journal-line}
+
+[Defying the Washington Consensus: the Socialist Big Push and the Making of China's Developmental State]{.paper-title}
+[Under Review]{.journal-line}
 
 [[Stimulus versus Market: How China's 2008 Rescue Package Polarized Firm Dynamics and Altered Privatization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6913454)]{.paper-title} (with Liuqin Zhang and Yasheng Zhang)
 [Under Review]{.journal-line}
@@ -93,7 +91,7 @@ YES Meeting at Jinan University (2024/11) · China Society of World Economics (2
 [[Serving the People or the People's Note: On the Political Economy of Talent Allocation](https://doi.org/10.1017/bap.2023.11)]{.paper-title}
 [*Business and Politics* 25.3 (2023): 330-351]{.journal-line}
 
-[[Contracting arrangements and public private partnerships for sustainable development](https://doi.org/10.3326/pse.42.2.8)]{.paper-title} (with Ehtisham Ahmad and Alfredo Vinella)
+[[Contracting arrangements and public private partnerships for sustainable development](https://doi.org/10.3326/pse.42.2.8)]{.paper-title} (with Ehtisham Ahmad and Annalisa Vinella)
 [*Public Sector Economics* 42.2 (2018): 145-169]{.journal-line}
 
 [[Fiscal Underpinnings for Sustainable Development in China: Rebalancing in Guangdong](https://doi.org/10.1007/978-981-10-6286-5)]{.paper-title} (edited with Ehtisham Ahmad and Meili Niu)
