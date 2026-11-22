@@ -13,7 +13,7 @@ website:
       - href: index.qmd
         text: Home
       - href: book-project.qmd
-        text: Book Project
+        text: Monograph
   page-footer:
     left: "© 2026 Kezhou Xiao"
     right:
