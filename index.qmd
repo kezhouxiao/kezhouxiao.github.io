@@ -22,6 +22,11 @@ My research mainly examines the political economy of China's reform and developm
 - M.S. in Statistics, University of Virginia, 2012
 - B.A. in Mathematics and Economics (with Distinction), University of Virginia, 2009–2011
 
+## Appointments
+
+- Research Assistant Professor, Institute of Guangdong, Hong Kong, Macau Development Studies, Sun Yat-sen University, 2024–present
+- Assistant Professor, Lingnan College, Sun Yat-sen University, 2021–2024
+
 ## Book Project
 
 ![](book_cover.png){.book-cover}
@@ -48,7 +53,7 @@ Related papers:
 <details class="presentations">
 <summary>Presentations (8)</summary>
 <div class="presentation-body">
-Sun Yat-sen University (2022/12) · Nanjing University (2023/5) · South China Normal University (2023/6) · Fudan University (2023/10) · Xiamen University (2023/11) · International Economic Association World Congress in Colombia (2023/12) · Shanghai Jiaotong University (2026/4) · International Economic Association World Congress in Serbia (2026/6)
+Sun Yat-sen University (2022/12) · Nanjing University (2023/5) · South China Normal University (2023/6) · Fudan University (2023/10) · Xiamen University (2023/11) · International Economic Association World Congress in Colombia (2023/12) · Shanghai Jiaotong University (2026/4) · **International Economic Association World Congress in Serbia (2026/6)** — [book presentation](https://ygafz.sysu.edu.cn/article/2234)
 </div>
 </details>
 
@@ -87,6 +92,9 @@ YES Meeting at Jinan University (2024/11) · China Society of World Economics (2
 
 [[Serving the People or the People's Note: On the Political Economy of Talent Allocation](https://doi.org/10.1017/bap.2023.11)]{.paper-title}
 [*Business and Politics* 25.3 (2023): 330-351]{.journal-line}
+
+[[Contracting arrangements and public private partnerships for sustainable development](https://doi.org/10.17234/SocEkol.27.2.4)]{.paper-title} (with Ehtisham Ahmad and Alfredo Vinella)
+[*Public Sector Economics* 42.2 (2018): 145-169]{.journal-line}
 
 [[Fiscal Underpinnings for Sustainable Development in China: Rebalancing in Guangdong](https://doi.org/10.1007/978-981-10-6286-5)]{.paper-title} (edited with Ehtisham Ahmad and Meili Niu)
 [Singapore: Springer, 2018]{.journal-line}

@@ -6,6 +6,42 @@ title: "Book Project"
 
 [London and New York: Routledge, 2026 — [Available now](https://www.routledge.com/Marketization-and-Party-State-Transformation-How-the-Communist-Party-of-China-Outmaneuvered-the-Washington-Consensus/Xiao/p/book/9781041413196)]{.book-status}
 
+::: {.book-details}
+**290 pages** · Hardback ISBN 9781041413196 · eBook ISBN 9781042027071
+
+<details class="book-toc">
+<summary>Table of Contents</summary>
+<div class="toc-body">
+1. Introduction: China as a Post-Cold War Outlier
+2. A Proposed Framework: Marketization and Party-State Transformation
+3. The Making of a Socialist Developmental State: Endogenous Talent Reallocation and Statecraft of Marketization
+4. Technocrats, Technopols, and the Politics of Market Reform: Commission Rivalry and the Forging of the Socialist Developmental State
+5. Fostering Quality Market Institutions: The Central Advisory Commission and the Four Modernizations of Cadres
+6. Conclusion: Possible Future
+</div>
+</details>
+
+<details class="book-cite">
+<summary>Cite this book</summary>
+<div class="cite-body">
+**APA:**
+Xiao, K. (2026). *Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus*. Routledge.
+
+**BibTeX:**
+```
+@book{xiao2026marketization,
+  title     = {Marketization and Party-State Transformation: How the Communist Party of China Outmaneuvered the Washington Consensus},
+  author    = {Xiao, Kezhou},
+  year      = {2026},
+  publisher = {Routledge},
+  address   = {London and New York},
+  isbn      = {9781041413196}
+}
+```
+</div>
+</details>
+:::
+
 In 1989, as the Berlin Wall fell, the political consensus around the world was clear: both the Communist Party of China and the Communist World were facing a terminal crisis. Yet, in the following decades, China not only averted all forms of collapse but engineered the most dramatic economic ascent in human history while defying Washington's prominent political prescriptions: transition to liberal democracy. How?
 
 ### Figure 1.1: The Effect of the Fall of the Berlin Wall on GDP per Capita, 1979–2019

@@ -211,6 +211,62 @@ details.presentations .presentation-body {
   margin: 0.35rem 0 0 1rem;
 }
 
+// ---------- book details ----------
+.book-details {
+  background: rgba($celadon, 0.04);
+  border-left: 2px solid rgba($celadon, 0.35);
+  padding: 0.9rem 1.2rem;
+  margin: 1.2rem 0 1.6rem;
+  border-radius: 2px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.book-details strong { font-weight: 600; color: $ink; }
+
+details.book-toc, details.book-cite {
+  margin: 0.65rem 0 0;
+}
+details.book-toc summary, details.book-cite summary {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: $celadon;
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+details.book-toc summary::-webkit-details-marker,
+details.book-cite summary::-webkit-details-marker { display: none; }
+details.book-toc summary::before, details.book-cite summary::before {
+  content: "›";
+  color: $celadon;
+  transition: transform 0.15s ease;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+details.book-toc[open] summary::before,
+details.book-cite[open] summary::before { transform: rotate(90deg); }
+
+.toc-body, .cite-body {
+  font-size: 0.86rem;
+  color: $ink;
+  line-height: 1.65;
+  margin: 0.7rem 0 0 1.15rem;
+}
+.cite-body { font-size: 0.83rem; }
+.cite-body pre, .cite-body code {
+  background: rgba($ink, 0.035);
+  border: 1px solid rgba($celadon, 0.15);
+  border-radius: 2px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.78rem;
+  overflow-x: auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+.cite-body code { padding: 0.15rem 0.35rem; display: inline; border: none; }
+
 // ---------- TOC ("On this page") ----------
 #TOC, nav[role="doc-toc"] {
   font-size: 0.8rem;
