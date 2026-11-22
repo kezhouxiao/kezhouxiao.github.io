@@ -52,13 +52,10 @@ Sun Yat-sen University (2022/12) · Nanjing University (2023/5) · South China N
 ## Working Papers
 
 [From Revolutionaries to Technocrats: How Four Modernizations of Cadres Drove China's Market Transition]{.paper-title}
-[Under Review]{.journal-line}
 
 [Defying the Washington Consensus: the Socialist Big Push and the Making of China's Developmental State]{.paper-title}
-[Under Review]{.journal-line}
 
 [[Stimulus versus Market: How China's 2008 Rescue Package Polarized Firm Dynamics and Altered Privatization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6913454)]{.paper-title} (with Liuqin Zhang and Yasheng Zhang)
-[Under Review]{.journal-line}
 
 <details class="presentations">
 <summary>Presentations (5)</summary>
@@ -68,7 +65,6 @@ Sun Yat-sen University (2024/4) · YES Meeting at Northwest University, Xi'an, C
 </details>
 
 [Does Internationalizing the Stock Market Stimulate ESG Performance? Evidence from Connect Programs]{.paper-title} (with Shupeng Lin, Li Chen, and Luofu Ye)
-[Under Review]{.journal-line}
 
 <details class="presentations">
 <summary>Presentations (3)</summary>
